@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+    background-color: chartreuse;
+    color: gray;
+}
+h2{
+    text-align: center;
+    color:chocolate;
+}
+.parrafo p{
+    color:red;
+}
+.parrafo{
+    color:blue;
+}
