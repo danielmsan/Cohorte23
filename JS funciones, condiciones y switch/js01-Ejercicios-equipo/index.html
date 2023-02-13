@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deprimidora</title>
+</head>
+
+<body style="text-align: center;">
+
+    <h1>Deprimidora 7up</h1>
+    <div>
+        <h2>1- CALCULAR SUELDO</h2>
+        <!-- El evento onclick permite llamar a una funcion -->
+        <button id="ejer1Button" onclick="horas()">Ejercicio1</button>
+        <h3 id="ejer1"></h3>
+    </div>
+
+    <div>
+        <h2>2- Problema</h2>
+        <!-- Esto es una imagen le puse estilo en la etiqueta -->
+        <img style="border: black solid 1px;" src="./img/captura.png" alt="">
+        <!-- El evento onclick permite llamar a una funcion js-->
+        <button onclick="ejercicio2()">Ejercicio2</button>
+        <!-- Aqui le di un id al h3 para buscarlo despues en el codigo js -->
+        <h3 id="ejer2"></h3> <!--EL contenido de h3 se cambia con la funcion de ejercicio2 -->
+    </div>
+
+    <div>
+        <h2>3- Programa calculo de IMC</h2>
+        <button onclick="calcularPeso()">Calcular Peso</button>
+        <h3 id="IMC1"></h3>
+        <h3 id="IMC2"></h3>
+    </div>
+
+<!-- Hay que llamar al script al final del documento para que DOM pueda cargar bien -->
+    <script src="/js/Ejercicio2.js"></script>
+</body>
+</html>
