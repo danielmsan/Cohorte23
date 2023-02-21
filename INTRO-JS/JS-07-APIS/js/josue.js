@@ -1,3 +1,5 @@
+//Ejemplo de josue
+
 fetch("https://pokeapi.co/api/v2/pokemon/ditto")
 //.then toma la informacion
 //resultado es el nombre de la función que convierte la información en lo que necesites

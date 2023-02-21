@@ -1,3 +1,5 @@
+//Ejemplo victor
+
 // let url = 'https://randomuser.me/api/'
 let url = 'https://jsonplaceholder.typicode.com/users/';
 fetch(url)

@@ -1,24 +1,40 @@
+//Clase
 class OperacionesAritmeticas {
-//constructor
-    //caracteristicas
-    //atributos
+//constructor default
+
+    //atributos o propiedades
     numero0 = 5;
     numero1 = 0;
 
+    //Se puede definir un constructor
     constructor (valor0, valor1){
         this.numero0 = valor0;
         this.numero1 = valor1;
 
     }
+    // Metodos
 
-    //metodos
+    //Sumar
     sumar() {
         return this.numero0 + this.numero1;
     }
+    //Restar
+    restar = () => this.numero0 - this.numero1;
+    //Multiplicar
+    multiplicar = () => this.numero0 * this.numero1;
+    //Dividir
+    dividir = () => this.numero0 / this.numero1;
 }
+//Aqui se define el objeto nuevo usando el constructor y pasandole 2 parametros
+let obj4 = new OperacionesAritmeticas(8,4);
 
-let obj4 = new OperacionesAritmeticas(8,6);
+//Resultado en consola de cada metodo:
 console.log("----> "+obj4.sumar());
+console.log("----> "+obj4.restar());
+console.log("----> "+obj4.multiplicar());
+console.log("----> "+obj4.dividir());
+
+
 
 
 let obj3 = new OperacionesAritmeticas();
