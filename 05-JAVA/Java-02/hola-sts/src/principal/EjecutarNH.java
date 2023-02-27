@@ -6,7 +6,7 @@ import clases.NuevoHola;
 
 public class EjecutarNH {
 
-	public static void main(String[] args) {
+	private static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sn = new Scanner(System.in);
 		
@@ -18,7 +18,7 @@ public class EjecutarNH {
 		nombre = sn.nextLine();
 		
 		NuevoHola nh1 = new NuevoHola(nombre);
-		nh1.saludoConNombre(nombre);
+		nh1.saludoConNombre();
 	}
 
 }
