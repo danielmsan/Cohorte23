@@ -1,4 +1,5 @@
 
+suma(40,40);
 
 // Funciones
 function suma(a,b) {
@@ -6,8 +7,11 @@ function suma(a,b) {
     console.log(sum1);
 }
 
-
-
+const sumaAnonima = function suma(a,b) {
+    let sum1 = a + b;
+    console.log(sum1);
+}
+sumaAnonima(40,40);
 /*Por que son importantes las funciones?
     - Nos permite reutilizar codigo en lugar de escribirlo varias veces. Podemos llamar nuestra funcion en distintos lugares de nuestro programa, y así lo usamos cuando lo necesitamos sin necesidad de escribirlo de nuevo.
 

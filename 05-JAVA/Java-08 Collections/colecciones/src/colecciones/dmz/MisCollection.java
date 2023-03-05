@@ -2,20 +2,85 @@ package colecciones.dmz;
 
 import java.util.*;
 
-public class MisColecciones {
+public class MisCollection {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		 wrapperClass();
+		MisCollection c = new MisCollection();
+		//imprimir(c.listaCollections());
+		//imprimir(c.setCollections());
+		//wrapperClass();
+		mapCollections();
 	}
 	
-	public void listasCollections() {
+	private static void mapCollections() {
+		Map miMap = new HashMap();
+		miMap.put("valor1","Juan");
+		miMap.put("valor2", "Maria");
+		miMap.put("valor3", "Arturo");
+		miMap.put("valor4", "Karla");
+		
+		miMap.remove("valor3");
+		imprimir(miMap.keySet());
+		imprimir(miMap.values());
+	}
+	
+	Set setCollections() {
+		Set miSet = new HashSet();
+		miSet.add("uno");
+		miSet.add("dos");
+		miSet.clear();
+		miSet.add("tres");
+		miSet.add("cuatro");
+		miSet.add("dos");
+		
+		String palabra = "ocho";
+		boolean siTiene = miSet.contains(palabra);
+		if(siTiene) {
+			System.out.println("Contiene "+palabra);
+		}else {
+			System.out.println("No tiene "+palabra+" Ahorita lo agregamos pa");
+			miSet.add(palabra+" <------");
+		}
+		
+		Object a[] = miSet.toArray();
+		for(int i = 0; i < a.length; i++) {
+			System.out.println("Esto es un set en un array "+a[i]);
+		}
+		miSet.clear();
+		
+		
+		return miSet;
+	}
+	
+	
+	public List listaCollections() { //Funcion
 		List miLista = new ArrayList();
-		miLista.add(1);
-		miLista.add(2);
+		System.out.println(miLista + "tamaño de la lista antes " + miLista.size());
+		System.out.println("Esta vacia "+ miLista.isEmpty());
+		miLista.add("1");
+		miLista.add(0,2);
 		miLista.add(3);
+		miLista.add(0,"pato");
+		
+		miLista.set(0,miLista);
+		miLista.remove(0);
+		
+		System.out.println(miLista + "tamaño de la lista despues " + miLista.size());
+		System.out.println("Esta vacia "+ miLista.isEmpty());
+		
+		
+		boolean e = miLista.contains(3);
+		System.out.println("--->"+e);
+		
+		return miLista;
+		
 	}
 	
+	private static void imprimir(Collection collection) {
+		for(Object elementos : collection) {
+			System.out.println("elementos "+ elementos);
+		}
+	}
 	
 	
 	static void wrapperClass() {
