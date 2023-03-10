@@ -56,12 +56,20 @@ public class Cuenta {
 		this.comisionMensual = comisionMensual;
 	}
 	
-	
-	public void consignar(float cantidad) {
-		this.saldo += cantidad;
+	//----------------------------------------
+	public String consignar(float cantidad) {
+		setSaldo(cantidad);
+		return "Su saldo ahora es de: "+saldo;
 	}
-	public void retirar(double cantidad) {
-		this.saldo -= cantidad;
+	public  String retirar(float cantidad) {
+		if(cantidad>this.saldo) {
+			System.out.println("No puedes retirar mas de lo que tienes");
+			return " no puedes retirar mas de lo que tienes";
+		}
+		float resta = this.saldo - cantidad; 
+		setSaldo(resta);
+		System.out.println("Retiro exitoso");
+		return " Retiro exitoso";
 	}
 	public void calcularInteres() {
 		
@@ -69,5 +77,11 @@ public class Cuenta {
 	public void extractoMensual() {
 	}
 
+
+	public String imprimir() {
+		return "Cuenta [saldo=" + saldo + ", numConsignacion=" + numConsignacion + ", numRetiros=" + numRetiros
+				+ ", tasaAnual=" + tasaAnual + ", comisionMensual=" + comisionMensual + "]";
+	}
+	
 
 }

@@ -9,15 +9,15 @@ public class CuentaCorriente extends Cuenta {
 	}
 
 	@Override
-	public void consignar(float cantidad) {
+	public String consignar(float cantidad) {
 		// TODO Auto-generated method stub
 		super.consignar(cantidad);
 	}
 
 	@Override
-	public void retirar(double cantidad) {
+	public String retirar(double cantidad) {
 		// TODO Auto-generated method stub
-		super.retirar(cantidad);
+		return super.retirar(cantidad);
 	}
 
 	@Override
@@ -26,8 +26,6 @@ public class CuentaCorriente extends Cuenta {
 		super.extractoMensual();
 	}
 
-	public void Imprimir() {
-		// TODO Auto-generated method stub
-	}
+
 
 }
