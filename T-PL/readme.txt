@@ -1,6 +1,6 @@
 Ejercicios de Lógica de Programación que nos dejo Felipe
 
 
-//En la carpeta JS estan enumerados por Ejercicios.
+//Las carpetas estan enumeradas por Ejercicios.
 
 Saludos:D
