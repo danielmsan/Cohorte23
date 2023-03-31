@@ -28,7 +28,7 @@ public class Producto {
     private String nombre;
     private String descripcion;
     private String URL_Imagen;
-    private double precio;
+    private Double precio;
     
     //Constructor vacio para el Jackson (serializar y deserealizar un obreto JAVA a JSON)
     public Producto() {
@@ -36,7 +36,7 @@ public class Producto {
     } //Cierra Constructor Vacio
 
     //Constructor con todos los campos
-    public Producto(Long id, String nombre, String descripcion, String uRL_Imagen, double precio) {
+    public Producto(Long id, String nombre, String descripcion, String uRL_Imagen, Double precio) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
@@ -81,7 +81,7 @@ public class Producto {
         return precio;
     }
 
-    public void setPrecio(double precio) {
+    public void setPrecio(Double precio) {
         this.precio = precio;
     }
 
